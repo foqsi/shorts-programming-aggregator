@@ -13,7 +13,6 @@ function getChannelInfo() {
     fetch(getPirateSoftware)
         .then(response => response.json())
         .then(data => {
-            // console.log('PirateSoftware:', JSON.stringify(data, null, 2));
             const items = data.items;
             const mainWrapper = document.getElementsByClassName('left')[0];
 
